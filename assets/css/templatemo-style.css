@@ -136,10 +136,11 @@ html {
 }
 
 .menu .image img {
-    width: 140px;
+    width: 132px;
     height: 140px;
     border-radius: 50%;
     text-align: center;
+    box-shadow: 0 0 20px 0px rgba(63, 47, 47, 0.65);
 }
 
 .menu .author-content {
