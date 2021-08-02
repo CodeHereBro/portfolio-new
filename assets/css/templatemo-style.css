@@ -373,6 +373,7 @@ button:hover {
 .left-image img,
 .right-image img {
     border-radius: 5px;
+    width: 69%;
 }
 
 .right-image-post h4,
