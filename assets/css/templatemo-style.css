@@ -1,11 +1,19 @@
-@import url("fontawesome.css");
+/*
+
+Reflux Template
+
+https://templatemo.com/tm-531-reflux
+
+*/
+
+@import url(fontawesome.css);
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 body {
     font-family: 'Lato', sans-serif;
 }
 
 #page-wraper {
-    background: url("../images/page-bg.jpg") no-repeat center center fixed;
+    background: url(../images/page-bg.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -59,6 +67,11 @@ ul li {
     display: inline-block;
 }
 
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 *,
 *:before,
@@ -123,11 +136,10 @@ ul li {
 }
 
 .menu .image img {
-    width: 132px;
+    width: 140px;
     height: 140px;
     border-radius: 50%;
     text-align: center;
-    box-shadow: 0 0 20px 0px rgb(63 47 47 / 65%);
 }
 
 .menu .author-content {
