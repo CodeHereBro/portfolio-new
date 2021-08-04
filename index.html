@@ -255,55 +255,55 @@ Krishnendu Roy
 
               <div class="isotope-item" data-type="drawing">
                 <figure class="d-drawing snip1321">
-                  <img src="assets/images/Krishnendu-ai.jpg" alt="digital painting" style="width: 305px;"/>
+                  <img src="assets/images/Krishnendu-ai.jpg" alt="digital painting" style="width: 305px;" />
                   <figcaption>
                     <a href="assets/images/Krishnendu-ai.jpg" data-lightbox="image-1" data-title="Krishnendu Roy"><i
                         class="fa fa-search"></i>
-                    <h4>Digital Painting</h4>
-                    <span>Watch now</span>
-                  </a>
+                      <h4>Digital Painting</h4>
+                      <span>Watch now</span>
+                    </a>
                   </figcaption>
                 </figure>
               </div>
 
               <div class="isotope-item" data-type="drawing">
                 <figure class="d-drawing snip1321">
-                  <img src="assets/images/Shilpi-ai.jpg" alt="digital painting" style="width: 305px;"/>
+                  <img src="assets/images/Shilpi-ai.jpg" alt="digital painting" style="width: 305px;" />
                   <figcaption>
                     <a href="assets/images/Shilpi-ai.jpg" data-lightbox="image-1" data-title="Sister Shilpi Roy"><i
                         class="fa fa-search"></i>
-                    <h4>Digital Painting</h4>
-                    <span>Watch Now</span>
-                  </a>
+                      <h4>Digital Painting</h4>
+                      <span>Watch Now</span>
+                    </a>
                   </figcaption>
                 </figure>
               </div>
 
               <div class="isotope-item" data-type="drawing">
                 <figure class="d-drawing snip1321">
-                  <img src="assets/images/albert-einstein.jpg" alt="digital painting" style="width: 305px;"/>
+                  <img src="assets/images/albert-einstein.jpg" alt="digital painting" style="width: 305px;" />
                   <figcaption>
-                    <a href="assets/images/albert-einstein.jpg" data-lightbox="image-1" data-title="albert einstein drawing"><i
-                        class="fa fa-search"></i>
-                    <h4>Drawing albert einstein</h4>
-                    <span>Watch Now</span>
-                  </a>
+                    <a href="assets/images/albert-einstein.jpg" data-lightbox="image-1"
+                      data-title="albert einstein drawing"><i class="fa fa-search"></i>
+                      <h4>Drawing albert einstein</h4>
+                      <span>Watch Now</span>
+                    </a>
                   </figcaption>
                 </figure>
               </div>
               <div class="isotope-item" data-type="drawing">
                 <figure class="d-drawing snip1321">
-                  <img src="assets/images/leo.jpg" alt="digital painting" style="width: 305px;"/>
+                  <img src="assets/images/leo.jpg" alt="digital painting" style="width: 305px;" />
                   <figcaption>
                     <a href="assets/images/leo.jpg" data-lightbox="image-1" data-title="Leonardo Da Vinci"><i
                         class="fa fa-search"></i>
-                    <h4>Drawing Leonardo Da Vinci</h4>
-                    <span>Watch Now</span>
-                  </a>
+                      <h4>Drawing Leonardo Da Vinci</h4>
+                      <span>Watch Now</span>
+                    </a>
                   </figcaption>
                 </figure>
               </div>
-              
+
 
               <div class="isotope-item" data-type="videos">
                 <figure class="snip1321">
@@ -334,7 +334,7 @@ Krishnendu Roy
         <div class="row">
           <div class="right-content">
             <div class="container">
-              <form id="contact" action="email.php" method="post">
+              <form id="my-form" action="https://formspree.io/f/meqvrrbo" method="post">
                 <div class="row">
                   <div class="col-md-6">
                     <fieldset>
@@ -367,6 +367,7 @@ Krishnendu Roy
                       </button>
                     </fieldset>
                   </div>
+                  <div id="status"></div>
                 </div>
               </form>
             </div>
@@ -436,5 +437,31 @@ Krishnendu Roy
     });
   </script>
 </body>
+<script>
+  var form = document.getElementById("my-form");
+  
+  async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("status");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+      method: form.method,
+      body: data,
+      headers: {
+          'Accept': 'application/json'
+      }
+    }).then(response => {
+      status.innerHTML = "Thanks for your submission!";
+      status.style.backgroundColor = "yellowgreen";
+      status.style.color = "black";
+      form.reset()
+    }).catch(error => {
+      status.innerHTML = "Oops! There was a problem submitting your form"
+      status.style.backgroundColor = "rgb(250, 129, 92);";
+      status.style.color = "white";
+    });
+  }
+  form.addEventListener("submit", handleSubmit)
+</script>
 
 </html>
