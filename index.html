@@ -218,25 +218,12 @@ Krishnendu Roy
 
               <div class="isotope-item" data-type="project">
                 <figure class="snip1321">
-                  <img src="assets/images/android-studio.png" alt="Tic-Tac-Toe Game" />
+                  <img src="assets/images/virtual-assistant.jpg" alt="virtual-assistant" />
                   <figcaption>
-                    <i class="fa fa-search"></i>
-                    <a href="https://github.com/CodeHereBro/Tic-Tac-Toe" target="_blank">
-                      <h4>Tic-Tac-Toe Game</h4>
-                      <span>Visit Now</span>
-                    </a>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="videos">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-03.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-03.jpg" data-lightbox="image-1" data-title="Caption"><i
+                    <a href="assets/images/virtual-assistant.jpg" data-lightbox="image-1" data-title="Caption"><i
                         class="fa fa-search"></i></a>
-                    <h4>Item Third</h4>
-                    <span>customize anything</span>
+                    <h4>virtual Assistant using Python</h4>
+                    <span>Visit Now</span>
                   </figcaption>
                 </figure>
               </div>
@@ -249,6 +236,19 @@ Krishnendu Roy
                         class="fa fa-search"></i></a>
                     <h4>virtual Assistant using Python</h4>
                     <span>Visit Now</span>
+                  </figcaption>
+                </figure>
+              </div>
+
+              <div class="isotope-item" data-type="project">
+                <figure class="snip1321">
+                  <img src="assets/images/android-studio.png" alt="Tic-Tac-Toe Game" />
+                  <figcaption>
+                    <i class="fa fa-search"></i>
+                    <a href="https://github.com/CodeHereBro/Tic-Tac-Toe" target="_blank">
+                      <h4>Tic-Tac-Toe Game</h4>
+                      <span>Visit Now</span>
+                    </a>
                   </figcaption>
                 </figure>
               </div>
@@ -291,7 +291,7 @@ Krishnendu Roy
                   </figcaption>
                 </figure>
               </div>
-              <div class="isotope-item" data-type="drawing">
+              <div class="isotope-item drawing" data-type="drawing">
                 <figure class="d-drawing snip1321">
                   <img src="assets/images/leo.jpg" alt="digital painting" style="width: 305px;" />
                   <figcaption>
@@ -304,17 +304,34 @@ Krishnendu Roy
                 </figure>
               </div>
 
+              
+              <div class="isotope-item" data-type="videos">
+                <div class="video">
+                  <iframe src="https://www.youtube.com/embed/OngI56_maxk" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <!-- <h2>প্রিয় নেতাজী</h2> -->
+                </div>
+                </figure>
+              </div>
+
 
               <div class="isotope-item" data-type="videos">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-06.jpg" alt="sq-sample26" />
-                  <figcaption>
+                <!-- <figure class="snip1321"></figure> -->
+                <!-- <img src="assets/images/portfolio-06.jpg" alt="sq-sample26" /> -->
+                <div class="video"><iframe src="https://www.youtube.com/embed/-BMSTyRK3zQ" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                  <!-- <h2>ভালো মেয়ে ঠিক কাকে বলে জানো</h2> -->
+                </div>
+                <!-- <figcaption>
                     <a href="assets/images/portfolio-06.jpg" data-lightbox="image-1" data-title="Caption"><i
                         class="fa fa-search"></i></a>
                     <h4>Awesome Sixth</h4>
                     <span>Donec eget massa ante</span>
-                  </figcaption>
-                </figure>
+                  </figcaption> -->
+                <!-- </figure> -->
               </div>
             </div>
           </div>
@@ -439,7 +456,7 @@ Krishnendu Roy
 </body>
 <script>
   var form = document.getElementById("my-form");
-  
+
   async function handleSubmit(event) {
     event.preventDefault();
     var status = document.getElementById("status");
@@ -448,7 +465,7 @@ Krishnendu Roy
       method: form.method,
       body: data,
       headers: {
-          'Accept': 'application/json'
+        'Accept': 'application/json'
       }
     }).then(response => {
       status.innerHTML = "Thanks for your submission!";
