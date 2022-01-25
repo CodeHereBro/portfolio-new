@@ -282,6 +282,36 @@ html {
 
 /* Section */
 
+.hello{
+    text-align: center;
+    color: #8e8d8a;
+    font-size: 4rem;
+}
+
+code{
+    font-family: Helvetica,Arial,sans-serif;
+    color: #e98074;
+}
+
+.lead{
+    color: #e85a4f;
+    font-size: xx-large;
+    font-weight: 300;
+    text-align: center;
+}
+
+.txt-rotate {
+    margin-top: 5px;
+    /* font-size: 16px; */
+    /* color: #fff; */
+    letter-spacing: 0.5px;
+}
+
+.display-3, .display-4 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
 .section {
     color: #fff;
     width: 55%;
@@ -303,7 +333,9 @@ html {
     font-weight: 700;
     color: #fff;
 }
-
+.intro{
+    margin-bottom: 80px;
+}
 .section-heading .line-dec {
     width: 60px;
     height: 3px;
@@ -311,7 +343,11 @@ html {
     margin: 10px auto;
 }
 
-.section-heading span {
+p strong{
+    color: #bd2b39;
+}
+
+.section-heading p {
     margin-top: 5px;
     font-size: 16px;
     color: #fff;
